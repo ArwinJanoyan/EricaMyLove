@@ -1,0 +1,95 @@
+<html>
+
+   <head>
+     <title>ForMyErica<3 </title>
+	 
+	 <style>
+ body{
+    
+	 min-height: 100vh;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 background: #efd4e7;
+ }
+ .heart{
+     height: 70px;
+	 width: 70px;
+	 background: #f20044;
+	 position: relative;
+	 transform: rotate(-45deg);
+	 box-shadow: -10px 10px 90px #f20044;
+	 animation: heart 0.6s linear infinite;	 
+ }
+ 
+@keyframes heart{
+     0%{
+	    transform: rotate(-45deg) scale(1.07);
+	 }
+	 80%{
+	    transform: rotate(-45deg) scale(1.0);
+	 }
+	 100%{
+	    transform: rotate(-45deg) scale(0.8);
+	 }
+}
+.heart:before{
+     content: '';
+	 position: absolute;
+	 height: 70px;
+	 width: 70px;
+	 background: #f20044;
+	 top: -50%;
+	 border-radius: 50px;
+	 box-shadow: -10px -10px 90px #f20044;
+ }
+ .heart:after{
+     content: '';
+	 position: absolute;
+	 height: 70px;
+	 width: 70px;
+	 background: #f20044;
+	 right: -50%;
+	 border-radius: 50px;
+	 box-shadow: 10px 10px 90px #f20044;
+ }
+ h1{
+   padding: 100px;
+   text-align: center-left;
+   font-family: Brush Script MT;
+   font-size: 70px;
+ }
+ a{
+   padding-left: 100px;
+   text-align: center-left;
+   font-family: Brush Script MT;
+   font-size: 70px;
+   color: lightskyblue;
+   text-decoration: none;
+ }
+a:hover{
+ color: red;
+ font-size: 75px;
+ }
+     </style>
+	 
+   </head>
+ 
+<body>
+  <h1>hi my love</h1>
+  
+<h2>
+  <div class="heart"></div>
+</h2>
+<br>
+<a href="2.html">
+TAP ME
+</a>
+</body>
+
+
+
+
+
+
+</html>
